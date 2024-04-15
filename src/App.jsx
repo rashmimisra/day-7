@@ -1,15 +1,26 @@
 
 import './App.css'
-import Languages from './component/Languages';
+import Controlledcomponent from './component/Controlledcomponent';
+
 import Message from './component/Message';
+import Reset1 from './component/Reset1';
+
+
+
 
 function App() {
-  
-  return (
-    <>
+   return (
+      <>
+      <Reset1/>
       <Message/>
-      <Languages/>
-     </>
-  );
+      <Message/>
+      <Message/>
+      <Message/>
+    {/* <Controlledcomponent/> */}
+
+    
+      </>
+      
+   );
 }
 export default App
