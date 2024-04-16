@@ -1,33 +1,27 @@
-import React , {useState , useEffect} from 'react';
+import React , {useState } from 'react';
 
-const Click = () => {
-    const [count , setCount]= useState(0);  //useState hook
+const Click = (props) => {
+    const {counter , increment,decrement,deleteCounter}=props;
+    console.log(counter);
     const checkValue=() =>{
-        return count==0?"zero":count;
+        return counter.count==0?"zero":counter.count;
     }
     const checkCounter=()=>{
-        return count===0?
+        return counter.count===0?
         " bg-danger mx-2 px-4":"bg-success text-white mx-2 px-4";
     }
     // let count=1;
-    const decrement=()=>{
-       if(count>0){
-       setCount(count-1);
-       }
-
-    }
-    const increment=()=>{
-        setCount(count+1);
-    }
-    useEffect(()=>{
-        console.log(count)
-    } , [count]);
+    
+    // useEffect(()=>{
+    //     console.log(count)
+    // } , [count]);
 
   return (
     <div className='container mt-3'>
-        <button className='btn btn-primary' onClick={increment}>increment</button>
+        <button className='btn btn-primary' onClick={()=>increment(counter)}>increment</button>
         <span className= {checkCounter()}>{checkValue()}</span>
-        <button className='btn btn-primary ' onClick={decrement}>decrement</button>
+        <button className='btn btn-primary ' onClick={()=>decrement(counter)}>decrement</button>
+        <button className='btn btn-primary m-2' onClick={()=>deleteCounter(counter)}>Delete</button>
     </div>
   )
 }
