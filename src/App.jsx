@@ -1,11 +1,8 @@
 
 import './App.css'
-import Click from './component/Click';
-import MyCounter from './component/MyCounter';
-// import Controlledcomponent from './component/Controlledcomponent';
-
-// import Message from './component/Message';
-// import Reset1 from './component/Reset1';
+import Card from './component/Card';
+import MyCard from './component/MyCard';
+import MyCard2 from './component/MyCard2';
 
 
 
@@ -14,7 +11,7 @@ function App() {
    return (
       <>
      
-    <MyCounter/>
+    <MyCard2/>
       </>
       
    );
