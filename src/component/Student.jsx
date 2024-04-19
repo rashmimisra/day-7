@@ -11,7 +11,7 @@ const Student = () => {
     ]);
   return (
     <div>
-        {param.name?"hello":JSON.stringify(studentInfo)}
+        {param.name?JSON.stringify(studentInfo.find((student)=>student.sname===param.name)):JSON.stringify(studentInfo)}
     </div>
   )
 }
