@@ -24,7 +24,7 @@ const MyCard = () => {
   .then(data=>{
     setProducts(data.products)
   });
-  })
+  },[])
   return (
     <div className='container d-flex mt-2 '>
        {products.map(product=>(

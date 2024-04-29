@@ -12,6 +12,7 @@ import Product1 from'./component/Product1';
 import Product2 from './component/Product2';
 import Product3 from './component/Product3';
 import Student from './component/Student';
+import Mydog from './component/Mydog';
 
 
 
@@ -20,7 +21,7 @@ import Student from './component/Student';
 function App() {
    return (
       <>
-      <NavBar/>
+      {/* <NavBar/>
      
       <Routes>
          <Route path='/'element={<HomePage/>}/>
@@ -38,7 +39,8 @@ function App() {
          <Route path='*' element={<Errorpage/>}/>
          
 
-      </Routes>
+      </Routes> */}
+      <Mydog/>
      
    
       </>
