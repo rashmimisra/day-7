@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { redirect } from 'react-router-dom';
 
 const Login = () => {
     const [userInfo,setInfo]=useState({user:"",pass:""});
@@ -19,24 +20,22 @@ const Login = () => {
     //     setPass(event.target.value);
     // }
   return (
-    <div className='  d-flex  flex-column col-6 m-2  '>
+    <div  className=' container flex-column col-10 text-center  justify-content-center mt-5 align-item-center   '>
    <h2> Login Information</h2>
-   <form>
-    <label htmlFor="user" className='container m-2 flex-cloumn' >
-    Enter user name
-    <input  ref={userRef} type="text" name='user' value={userInfo.user} onChange={changeUserInfo}/>
-</label>
+   <form className='  d-flex  flex-column  m-2 font-family-sans-serif    '>
+    <label htmlFor="user"  >
+    Enter user name</label>
+    <input  className='container col-3  rounded  ' ref={userRef} type="text" name='user' value={userInfo.user} onChange={changeUserInfo}/>
 
 
-<label htmlFor="password" className='container m-2'> enter password
 
-    <input type="password" name='pass'value={userInfo.pass} onChange={changeUserInfo}/>
+<label htmlFor="password"> Enter password</label>
 
-
-</label>
+    <input  className='container col-3  rounded '  type="password" name='pass'value={userInfo.pass} onChange={changeUserInfo}/>
+      
 
    </form>
-
+   <button className=" btn btn-success col-3  mt-2  radius-rounded" type='submit'> Submit </button>
 
 
     </div>

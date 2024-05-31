@@ -18,6 +18,7 @@ import UseEffectex from './component2/UseEffectex';
 import { UseReducer } from './component2/UseReducer';
 import UseContext from './component2/UseContext';
 import Login from './component/Login';
+import Logeer from './component/Logeer';
 
 
 
@@ -26,7 +27,7 @@ import Login from './component/Login';
 function App() {
    return (
       <>
-      <h1> HOME PAGE  </h1>
+      <h1 className='container text-center'> HOME PAGE  </h1>
 <hr>
 </hr>     
      <Login/>
