@@ -13,6 +13,11 @@ import Product2 from './component/Product2';
 import Product3 from './component/Product3';
 import Student from './component/Student';
 import Mydog from './component/Mydog';
+import Usestate from './component2/Usestate';
+import UseEffectex from './component2/UseEffectex';
+import { UseReducer } from './component2/UseReducer';
+import UseContext from './component2/UseContext';
+import Login from './component/Login';
 
 
 
@@ -21,6 +26,10 @@ import Mydog from './component/Mydog';
 function App() {
    return (
       <>
+      <h1> HOME PAGE  </h1>
+<hr>
+</hr>     
+     <Login/>
       {/* <NavBar/>
      
       <Routes>
@@ -40,7 +49,7 @@ function App() {
          
 
       </Routes> */}
-      <Mydog/>
+      {/* <Mydog/> */}
      
    
       </>
